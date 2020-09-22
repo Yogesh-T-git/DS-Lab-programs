@@ -1,0 +1,146 @@
+Q1. 
+#include<stdio.h> 
+int main() 
+{ 
+ int c,a,b,i; 
+ while(1) 
+ { 
+ printf("PRESS THE NUMBER TO CHOOSE THE OPERATION :\n"); 
+ printf("1) Add\n"); 
+ printf("2)Subtract\n"); 
+ printf("3)Multiply\n"); 
+ printf("4)Divide\n"); 
+ printf("5)Modulus\n"); 
+ printf("6)Greater than\n"); 
+ printf("7)Lesser than\n"); 
+ printf("8)Equal to\n"); 
+ printf("9)Not equal to\n"); 
+ printf("10)Increement\n"); 
+ scanf("%d",&i); 
+ printf("Enter two numbers to perform the selected operation:\n"); 
+ scanf("%d%d",&a,&b); 
+ switch(i) 
+ { 
+ case 1:printf("%d + %d = %d \n",a,b,a+b);break;
+ case 2:printf("%d - %d = %d \n",a,b,a-b);break; 
+ case 3:printf("%d x %d = %d \n",a,b,a*b);break; 
+ case 4:printf("%d / %d = %d \n",a,b,a/b);break; 
+ case 5:printf("%d mod %d = %d \n",a,b,a%b);break; 
+ case 6:if(a>b) 
+ { 
+ printf("%d > %d \n",a,b); 
+ 
+ } 
+ else 
+ { 
+ printf("%d > %d \n",b,a); 
+ } 
+ break; 
+ case 7:if(a<b) 
+ { 
+ printf("%d < %d \n",a,b); 
+ 
+ } 
+ else 
+ { 
+ printf("%d < %d \n",b,a); 
+ } 
+ break; 
+ case 8:if(a==b) 
+ {
+ printf("%d = %d \n",a,b); 
+ 
+ } 
+ else 
+ { 
+ printf("%d != %d \n",b,a); 
+ } 
+ break; 
+ case 9:if(a!=b) 
+ { 
+ printf("%d != %d \n",a,b); 
+ 
+ } 
+ else 
+ { 
+ printf("%d = %d \n",b,a); 
+ } 
+ break; 
+ case 10: 
+ printf("%d++ = %d \n",a,a+1); 
+ printf("%d++ =%d \n",b,b+1); 
+ break; 
+ default:printf("WRONG INPUT!\n"); 
+ } 
+ printf("Press 1 to perform calculation again\nPress any other key to exit\n"); 
+ scanf("%d",&c);
+ if(c!=1) 
+ { 
+ break; 
+ } 
+ } 
+}
+
+
+
+
+Q2. 
+#include <stdio.h>
+
+int sumaver(int a,int b) 
+{ 
+ int sum; 
+ sum=a+b; 
+ printf("Sum= %d \n",sum); 
+ return sum/2; 
+ 
+} 
+
+void printeven(int a,int b) 
+{ 
+ int small,big; 
+ if(a>b) 
+ { 
+ small=b; 
+ big=a; 
+ } 
+ else 
+ { 
+ small=a; 
+ big=b; 
+ } 
+ printf("Even numbers between two numbers are:\n"); 
+ int i; 
+ for(i=small+1;i<big;i++) 
+ { 
+ if(i%2==0)
+ printf("%d \n",i); 
+ } 
+} 
+
+int main() 
+{ 
+ int a,b,c,avg,g1,g2; 
+ printf("Enter three numbers:\n"); 
+ scanf("%d%d%d",&a,&b,&c); 
+ if(c<a && c<b) 
+ { 
+ g1=a; 
+ g2=b; 
+ } 
+ else if(b<a && b<c) 
+ { 
+ g1=a; 
+ g2=c; 
+ } 
+ else 
+ { 
+ g1=b; 
+ g2=c; 
+ } 
+ 
+ avg=sumaver(g1,g2);
+ printf("Average of two numbers is : %d \n",avg); 
+ printeven(g1,g2); 
+ 
+}
