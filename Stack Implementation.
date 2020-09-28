@@ -1,0 +1,114 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define SIZE 10
+
+void push(int );
+void pop();
+void display();
+
+int value,choice,stack[SIZE],top= -1;
+
+int main()
+{
+    printf("(1) - push\n");
+    printf("(2) - pop\n");
+    printf("(3) - display\n\n");
+    printf("enter the choice\n");
+    scanf("%d",&choice);
+
+    while(choice!=4)
+    {
+        switch(choice)
+        {
+        case 1:
+            printf("enter the value to be inserted\n");
+            scanf("%d",&value);
+            push(value);
+            break;
+
+        case 2:
+            pop();
+            break;
+
+        case 3:
+            display();
+            break;
+        }
+    printf("\n");
+    printf("enter choice 4 to exit & other to continue\n");
+    scanf("%d",&choice);
+    }
+
+    return 0;
+}
+
+
+void push(int value)
+{
+    if (top==SIZE -1)
+        printf("Stack overflow\n");
+    else
+    {
+        top+=1;
+        stack[top]=value;
+        printf("insertion successful\n");
+    }
+
+}
+
+void pop()
+{
+    if(top==-1)
+        printf("Stack Underflow\n");
+    else
+    {
+        printf("Value %d is deleted successfully",stack[top]);
+        top--;
+    }
+}
+
+void display()
+{
+    if (top==-1)
+        printf("stack is empty\n");
+    else
+    {
+        printf("elements are:\n");
+
+        for(int i=top;i>=0;i--)
+            printf("%d\n",stack[i]);
+    }
+}
+
+Output :
+
+(1) - push
+(2) - pop
+(3) - display
+
+enter the choice
+1
+enter the value to be inserted
+2
+insertion successful
+
+enter choice 4 to exit & other to continue
+1
+enter the value to be inserted
+3
+insertion successful
+
+enter choice 4 to exit & other to continue
+3
+elements are:
+3
+2
+
+enter choice 4 to exit & other to continue
+2
+Value 3 is deleted successfully
+enter choice 4 to exit & other to continue
+4
+
+Process returned 0 (0x0)   execution time : 32.071 s
+Press any key to continue.
