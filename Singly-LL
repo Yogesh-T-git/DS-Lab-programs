@@ -1,0 +1,354 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct node{
+  int data;
+  struct node *next;
+}node;
+
+node *head=NULL;
+
+void add_at_end()
+{
+   node *temp;
+   temp=(node *)malloc(sizeof(node));
+
+   printf("Enter the node element\n");
+   scanf("%d",&temp->data);
+    temp->next=NULL;
+   if(head==NULL)
+  {
+  head=temp;
+  }
+  else
+  {
+    node *ptr=head;
+    while(ptr->next!=NULL)
+   {
+    ptr=ptr->next;
+   }
+   ptr->next=temp;
+  }
+}
+
+void add_at_begin()
+{
+ node *temp;
+temp=(node *)malloc(sizeof(node));
+ printf("Enter node element\n");
+ scanf("%d",&temp->data);
+ temp->next=NULL;
+
+ if(head==NULL)
+ {
+     head=temp;
+ }
+ else
+ {
+  temp->next=head;
+  head=temp;
+ }
+}
+
+int length()
+{
+  node *ptr;
+  ptr=head;
+  int i=0;
+
+  while(ptr!=NULL)
+  {
+   i++;
+   ptr=ptr->next;
+  }
+return i;
+}
+
+void add_after(){
+
+node *ptr,*temp;
+int loc,i=1;
+printf("Enter the location");
+scanf("%d",&loc);
+
+if(loc>length())
+{
+  printf("Invalid location. The list has %d nodes",length());
+}
+else
+{
+
+ptr=head;
+while(i<loc)
+{
+ ptr=ptr->next;
+ i++;
+}
+
+temp=(node *)malloc(sizeof(node));
+printf("Enter the node element\n");
+scanf("%d",&temp->data);
+temp->next=NULL;
+
+temp->next=ptr->next;
+ptr->next=temp;
+}
+}
+
+void delete()
+{
+int loc;
+node *temp;
+printf("Enter the locatin of node to be deleted\n");
+scanf("%d",&loc);
+
+if (loc>length())
+{
+  printf("There is no such node\n");
+}
+else if (loc==1)
+{
+ temp=head;
+head=temp->next;
+temp->next=NULL;
+free(temp);
+}
+else
+{
+node *ptr=head,*q;
+int i=1;
+while(i<loc-1)
+{
+  ptr=ptr->next;
+  i++;
+}
+q=ptr->next;
+ptr->next=q->next;
+q->next=NULL;
+free(q);
+}
+}
+
+
+void display()
+{
+ node *temp=head;
+ if(temp==NULL)
+ {
+   printf("No nodes in the list\n");
+ }
+ else
+ {
+   while(temp!=NULL)
+   {
+     printf("%d\n",temp->data);
+     temp=temp->next;
+   }
+ }
+}
+
+
+
+int main()
+{
+
+ int op,len;
+ while(1)
+{ printf("Enter the operation\n1.Add in begin\n2.Add at end\n");
+  printf("3.Add after a node\n4.Delete node\n5.Display\n6.Length of list\n7.Exit\n");
+  scanf("%d",&op);
+  switch (op)
+  {
+  case 1:add_at_begin();
+    break;
+  case 2: add_at_end();
+    break;
+  case 3: add_after();
+    break;
+  case 4: delete();
+    break;
+  case 5: display();
+    break;
+  case 6: len=length();
+          printf("The length is %d\n",len);
+    break;
+  case 7: exit(0);
+     break;
+  default: printf("No such operation\n");
+  }
+ }
+return 0;
+}
+
+OUTPUT:
+
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+1
+Enter node element
+1
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+1
+Enter node element
+2
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+1
+Enter node element
+3
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+1
+Enter node element
+4
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+1
+Enter node element
+5
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+1
+Enter node element
+6
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+5
+6
+5
+4
+3
+2
+1
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+4
+Enter the locatin of node to be deleted
+3
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+5
+6
+5
+3
+2
+1
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+1
+Enter node element
+2
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+5
+2
+6
+5
+3
+2
+1
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+3
+Enter the location1
+Enter the node element
+2
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+5
+2
+2
+6
+5
+3
+2
+1
+Enter the operation
+1.Add in begin
+2.Add at end
+3.Add after a node
+4.Delete node
+5.Display
+6.Length of list
+7.Exit
+6
+The length is 7
