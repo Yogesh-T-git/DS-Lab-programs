@@ -1,0 +1,324 @@
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:1
+
+Enter the Value to be inserted:1
+
+NODE INSERTED AT THE TOP OF THE STACK
+
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:1
+
+Enter the Value to be inserted:2
+
+NODE INSERTED AT THE TOP OF THE STACK
+
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:1
+
+Enter the Value to be inserted:4
+
+NODE INSERTED AT THE TOP OF THE STACK
+
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:1
+
+Enter the Value to be inserted:3
+
+NODE INSERTED AT THE TOP OF THE STACK
+
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:5
+
+
+LIST--> 3       4       2       1
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:6
+
+Sorted List::
+
+LIST--> 1       2       3       4
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:7
+
+Reversed List::
+
+LIST--> 4       3       2       1
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:8
+
+Create a Second list-->
+Enter the number of nodes : 2
+Enter the element to be inserted : 5
+Enter the element to be inserted : 6
+
+List1:
+
+LIST--> 4       3       2       1
+
+LIST2-->        5       6
+
+Concatenated List:
+
+LIST--> 4       3       2       1       5       6
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:6
+
+Sorted List::
+
+LIST--> 1       2       3       4       5       6
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:2
+
+NODE DELETED FROM TOP OF THE STACK
+
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:5
+
+
+LIST--> 2       3       4       5       6
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:3
+
+Enter the Value to be inserted:1
+
+NODE INSERTED AT REAR OF THE QUEUE
+
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:5
+
+
+LIST--> 2       3       4       5       6       1
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:
+6
+
+Sorted List::
+
+LIST--> 1       2       3       4       5       6
+
+*****************MENU****************
+Choose an option from the list:
+-----STACK OPERATIONS-----
+[1]PUSH
+[2]POP
+-----QUEUE OPERATIONS-----
+[3]ENQUEUE
+[4]DEQUEUE
+--------------------------
+[5]DISPLAY
+[6]SORT
+[7]REVERSE
+[8]CONCATENATION
+[9]EXIT
+
+Enter your choice:
